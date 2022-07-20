@@ -14,6 +14,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh 'echo $Kevin_ENV_VAR'
+                sh 'mvn test'
             }
         }
         stage('Deploy') {
